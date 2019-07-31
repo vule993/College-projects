@@ -1,0 +1,289 @@
+﻿using QueueApp.Common;
+using QueueApp.Model;
+using QueueApp.Presenter;
+using QueueApp.Repository;
+using QueueApp.View;
+using QueueApp.Service;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClientApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Server server = new Server();
+
+            UserContext userContext = new UserContext();    //inicijalizacija baze?
+            IRepository repo = new Repository(server, userContext);   //da li se server na ovaj naci povezuje sa repo?
+
+            IUserView userView = new UserView();    //ovde cemo view koristiti da vrati ispis i to cemo slati kao rez string
+            IUserModel userModel;                   //nad prosledjenim repo-m sprovode se operacije dostupne u userModelu
+            IUserPresenter userPresenter;
+
+            User user;
+
+            ////////////////////////// testiranje
+<<<<<<< working copy
+            User u1 = new User() { SubscribedTo = "PrviRed"};
+            User u2 = new User() { UserId = 1, SubscribedTo = "DrugiRed"};
+=======
+            User u1 = new User();
+            u1.UserId = 23;
+            u1.SubscribedTo = "PrviRed";
+
+            User u2 = new User();
+            u2.UserId = 1;
+            u2.SubscribedTo = "DrugiRed";
+>>>>>>> merge rev
+
+            ClientQueue cq1 = new ClientQueue("PrviRed");
+            cq1.SubscribedClients.Add(u1);
+
+            ClientQueue cq2 = new ClientQueue("DrugiRed");
+            cq2.SubscribedClients.Add(u2);
+
+            server.ClientQueues.Add(cq1.Title, cq1);
+            server.ClientQueues.Add(cq2.Title, cq2);
+            //////////////////////
+
+            String input = "";
+            String input1 = "";
+            String queueName = "";
+
+            do
+            {
+                Console.WriteLine("Glavni meni:");
+                Console.WriteLine("\t1. Izaberi nekog postojeceg User-a");
+                Console.WriteLine("\t2. Unos novog User-a");
+                Console.WriteLine("\t3. Izlaz");
+                Console.Write("\t>> ");
+                input = Console.ReadLine();
+                Console.WriteLine(Environment.NewLine);
+
+                switch (input)
+                {
+                    case "1":
+                        user = ChooseUser(server);
+                        // nudi mu se azuriranje ili povratak na glavni meni
+                        //do
+                        //{
+                            Console.WriteLine("\nDostupne operacije:");
+                            Console.WriteLine("\t1. Azuriraj postojece stanje");
+                            Console.WriteLine("\t2. Povratak na glavni meni");
+                            Console.Write("\t>> ");
+                            input1 = Console.ReadLine();
+                            Console.WriteLine(Environment.NewLine);
+
+                            if (input1 == "1")
+                            {
+                                // funkcija koja ce nuditi unos novih parametara za user-a
+                                //pozivace se od presentera UpdateCommand
+                                //Console.WriteLine("Azuriranje postojeceg stanja.\n");
+
+                                user = CreateOrUpdateUser(user);
+                                userModel = new UserModel(server, user);
+                                userPresenter = new UserPresenter(userView, userModel);
+                            
+                                userPresenter.UpdateCommand();
+                            }
+
+                        //} while (input1 != "2");
+
+                        break;
+
+                    case "2":
+                        user = CreateOrUpdateUser();
+                        // da li zeli da se pretplati ili da napravi novi par redova
+
+                        //do
+                        //{
+                            Console.WriteLine("\nDostupne operacije:");
+                            Console.WriteLine("\t1. Napravi novi par redova");
+                            Console.WriteLine("\t2. Pretplati se na postojeci");
+                            Console.WriteLine("\t3. Povratak na glavni meni");
+                            Console.Write("\t>> ");
+                            input1 = Console.ReadLine();
+                            Console.WriteLine(Environment.NewLine);
+
+                            switch (input1)
+                            {
+                                case "1":
+                                    queueName = CreateQueue();
+                                    userModel = new UserModel(server, user);
+                                    userPresenter = new UserPresenter(userView, userModel);
+                                    userPresenter.CreateCommand(queueName);
+
+                                    Console.WriteLine("GLEDAJ OVO MAGARE" + server.ServerQueue.QueueA.Count);
+                                    // opet ponuditi da li zeli da azurira svoje stanje ili zeli da se vrati na glavni meni
+                                break;
+
+                                case "2":
+                                    queueName = ChooseQueue(server);
+
+                                    userModel = new UserModel(server, user);
+                                    userPresenter = new UserPresenter(userView, userModel);
+                                    userPresenter.SubscribeCommand(queueName);
+                                    // opet ponuditi da li zeli da azurira svoje stanje ili zeli da se vrati na glavni meni
+                                    break;
+                            }
+
+
+                        
+                        //} while (input1 != "3");
+
+                        break;
+
+                    case "3":
+                        Console.WriteLine("Program zavrsen.");
+                        break;
+
+                    default:
+                        Console.WriteLine("Moguce opcije su '1', '2', 'Izlaz'\n");
+                        break;
+                }
+                //PrintAllUsers(s);
+                //CreateUser();
+            } while (input != "3");
+        }
+
+
+        private static void PrintAllUsers(Server server)
+        {
+            String output = "==========================================\n";
+            output += "\tID-evi dostupnih klijenata\n\n";
+
+            foreach (KeyValuePair<String, ClientQueue> pair in server.ClientQueues)
+            {
+                foreach (var element in pair.Value.SubscribedClients)
+                {
+                    output += "User ID: " + element.UserId + "\n";
+                    //output += "Subscribe to: " + element.SubscribedTo + "\n\n";
+                }
+            }
+
+            output += "\n==========================================\n";
+
+            Console.WriteLine(output);
+        }
+        private static User CreateOrUpdateUser(User u = null)
+        {
+            User user;
+            if (u == null)
+            {
+                Console.WriteLine("Unosenje novog user-a: ");
+                user = new User();
+            }
+            else
+            {
+                Console.WriteLine("Azuriranje postojeceg user-a: ");
+                user = u;
+            }
+            
+
+            int inputN = 0;
+            bool ok;
+
+            //input items
+            do
+            {
+                Console.Write("Unesite broj item-a:\t");
+                ok = Int32.TryParse(Console.ReadLine(), out inputN);
+            } while (!ok);
+            
+            for(int i = 0; i < inputN; i++)
+            {
+                Item item = new Item();
+
+                Console.Write("Unesite inicijalno stanje [1-active , 0-not active]:\t");
+                item.Active = (Console.ReadLine() == "1") ? true : false;
+
+                Console.Write("Unesite razornu moc Item-a:\t");
+                item.DestructivePower = Double.Parse(Console.ReadLine());
+
+                Console.Write("Unesite ime Item-a:\t");
+                item.Name = Console.ReadLine();
+
+                Console.Write("Unesite kolicinu Item-a:\t");
+                item.Quantity = Double.Parse(Console.ReadLine());
+
+                user.Items.Add(item);
+            }
+
+            //input positions
+            do
+            {
+                Console.Write("\nUnesite broj position-a:\t");
+                ok = Int32.TryParse(Console.ReadLine(), out inputN);
+            } while (!ok);
+
+            for (int i = 0; i < inputN; i++)
+            {
+                Position position = new Position();
+
+                Console.Write("Unesite x koordinatu:\t");
+                position.X = Double.Parse(Console.ReadLine());
+
+                Console.Write("Unesite y koordinatu:\t");
+                position.Y = Double.Parse(Console.ReadLine());
+
+                Console.Write("Unesite z koordinatu:\t");
+                position.Z = Double.Parse(Console.ReadLine());
+
+                user.Positions.Add(position);
+            }
+
+            return user;
+        }
+        private static User ChooseUser(Server server)
+        {
+            PrintAllUsers(server);
+            Console.Write("Unesite id korisnika: ");
+            int id = Int32.Parse(Console.ReadLine());
+
+            User user = null;
+
+            foreach(var clientQueue in server.ClientQueues.Values)
+            {
+                user =  clientQueue.SubscribedClients.Find(x => x.UserId == id);
+                if (user != null)
+                    return user;
+            }
+
+            // nikad nece doci do ovog return-a
+            return null;
+        }
+        private void UpdateUser(User u) {
+
+        }
+        private static void PrintAllQueues(Server server)
+        {
+            String output = "==========================================\n";
+            output += "\tTitle-ovi dostupnih redova\n\n";
+
+            foreach (String pair in server.ClientQueues.Keys)
+            {
+                output += "Queue title: " + pair + "\n";
+            }
+
+            output += "\n==========================================\n";
+
+            Console.WriteLine(output);
+        }
+        private static String CreateQueue()
+        {
+            Console.Write("Unesite naziv reda: ");
+            return Console.ReadLine();
+        }
+        private static String ChooseQueue(Server server)
+        {
+            PrintAllQueues(server);
+            Console.Write("Unesite naziv reda: ");
+            return Console.ReadLine();
+        }
+    }
+}

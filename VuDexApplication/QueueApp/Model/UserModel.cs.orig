@@ -1,0 +1,122 @@
+﻿using QueueApp.Common;
+using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Serialization;
+
+namespace QueueApp.Model
+{
+    public class UserModel : QueueAndXmlOperations, IUserModel
+    {
+        public Server DestinationServer { get; set; }
+        public User User { get; set; }
+
+        public UserModel(Server server, User user)
+        {
+            if(server == null || user == null)
+            {
+                throw new ArgumentNullException("Parametri ne smeju biti null.");
+            }
+
+            DestinationServer = server;
+            User = user;
+            
+            if(!String.IsNullOrEmpty(user.SubscribedTo))
+                Task.Factory.StartNew(() => ListeningOnClientQueue(DestinationServer.ClientQueues[user.SubscribedTo].QueueA));
+
+            Task.Factory.StartNew(() => ListeningOnServerQueue());
+        }
+
+        #region Commands
+        
+        public virtual void SubscribeCommand(String queueName)
+        {
+            if(queueName == null)
+            {
+                throw new ArgumentNullException("Parametar ne sme biti null.");
+            }
+            if (queueName == "")
+            {
+                throw new ArgumentException("Parametar ne sme biti prazan string.");
+            }
+            Packet packet = PacketCreate(RequestType.SUBSCRIBE, queueName, User);
+            String xml = Serialize(packet);
+            Push(DestinationServer.ServerQueue.QueueA, xml);
+        }
+        
+        public virtual void CreateCommand(String queueName)
+        {
+            if (queueName == null)
+            {
+                throw new ArgumentNullException("Parametar ne sme biti null.");
+            }
+            if (queueName == "")
+            {
+                throw new ArgumentException("Parametar ne sme biti prazan string.");
+            }
+            Packet packet = PacketCreate(RequestType.CREATE, queueName, User);
+            String xml = Serialize(packet);
+            Push(DestinationServer.ServerQueue.QueueA, xml);
+        }
+
+        public virtual void UpdateCommand()
+        {
+            // PUSH PORUKE NA CLIENTQUEUE
+            Packet packet = PacketCreate(RequestType.UPDATE, "update", User);
+            String xml = Serialize(packet);
+            Push(DestinationServer.ClientQueues[User.SubscribedTo].QueueA, xml);
+        }
+        #endregion
+
+        #region Listeners
+        private void ListeningOnServerQueue()
+        {
+            // ocekivane poruke su tipa CREATE ili SUBSCRIBE
+            while (true)
+            {
+                if (DestinationServer.ServerQueue.QueueB.Count > 0)
+                {
+                    String xmlPacket;
+                    xmlPacket = Pop(DestinationServer.ServerQueue.QueueB);
+                    //send to method deserialize
+                    Packet recievedPacket = Deserialize(xmlPacket);
+                    Console.WriteLine($"Recieved message: {recievedPacket.Message}");
+                    
+                    if (!String.IsNullOrEmpty(recievedPacket.User.SubscribedTo))
+                    {
+                        this.User.SubscribedTo = recievedPacket.User.SubscribedTo;
+                        Task.Factory.StartNew(() => ListeningOnClientQueue(DestinationServer.ClientQueues[User.SubscribedTo].QueueB));
+                    }
+                }
+            }
+        }
+        public void ListeningOnClientQueue(ConcurrentQueue<String> queue)
+        {
+            // ocekivane poruke su tipa UPDATE
+            while (true)
+            {
+                if (queue.Count > 0)
+                {
+                    String xmlPacket;
+                    xmlPacket = Pop(queue);
+                    //send to method deserialize
+                    Packet recievedPacket = Deserialize(xmlPacket);
+                    Console.WriteLine($"Recieved message: {recievedPacket.Message}");
+                }
+            }
+        }
+        #endregion
+
+        private Packet PacketCreate(RequestType command, String message, User u)
+        {
+            return new Packet(message, command, u);
+        }
+
+   
+    }
+}

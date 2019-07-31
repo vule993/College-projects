@@ -1,0 +1,107 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Serialization;
+
+namespace ClientApp
+{
+    [Serializable]
+    public class User : Client
+    {
+        // server to recieve commands
+        Server destinationServer;
+        Packet recievedPacket;
+        public Server DestinationServer { get { return destinationServer; } set { destinationServer = value; } }
+        public Packet RecievedPacket { get { return recievedPacket; } set { recievedPacket = value; } }
+        
+        public User()
+        {
+            Task task = Task.Factory.StartNew(() => Listening());
+        }
+
+        // background threat for recieving packets
+        private void Listening()
+        {
+            
+            while (true)
+            {
+                try
+                {
+                    recievedPacket = XMLtoPacket(destinationServer.ServerQueue.QueueB.Peek());
+                    if(recievedPacket.Usr.Id == this.Id)
+                    {
+                        //saljemo ga metodi recieve
+                        
+                        destinationServer.ServerQueue.QueueB.Dequeue();
+                    }
+                }
+                catch (Exception)
+                {
+                    
+                }
+            }
+            
+        }
+        public String PacketToXml(Packet p)
+        {
+            return "";
+
+        }
+        public Packet XMLtoPacket(String xml)
+        {
+            return new Packet();
+        }
+        // execute command
+        public void SendCommand()
+        {
+            Tuple<int, String> result = menu();
+            Packet p = PacketCreate(this, result.Item1, result.Item2);
+            String xml = PacketToXml(p);
+            Push(xml);
+        }
+
+
+        private Packet PacketCreate(Client client, int command, String message)
+        {
+            return new Packet() { Usr = client, TypeOfRequest = (RequestType)command, Message = message };
+        }
+        private Tuple<int, String> menu()
+        {
+
+            int command = -1;
+            String queueName = "";
+
+            do
+            {
+                Console.WriteLine($"Select command: \n\t1. CREATE\n\t2. SUBSCRIBE\n\t3. UPDATE\n-----------------------------");
+                Console.Write(">>");
+            } while(!Int32.TryParse(Console.ReadLine(), out command));
+
+
+            Console.WriteLine($"Type queue name:");
+            Console.Write(">>");
+            queueName = Console.ReadLine();
+
+            return new Tuple<int, string>(command, queueName);
+        }
+        // pop from server queue b
+        protected override void Pop()
+        {
+            
+        }
+
+<<<<<<< working copy
+        // push to server queue a
+        protected override void Push(String p)
+=======
+        public override void Push(string s)
+>>>>>>> merge rev
+        {
+            
+        }
+
+    }
+}

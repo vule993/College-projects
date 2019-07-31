@@ -1,0 +1,92 @@
+﻿using QueueApp.Common;
+using QueueApp.Model;
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Serialization;
+
+namespace QueueApp.Repository
+{
+    class Repository : QueueAndXmlOperations, IRepository
+    {
+        #region Fields
+        private Server destinationServer;
+        private UserContext userContext;
+        #endregion
+
+        #region Properties
+        public Server DestinationServer { get { return destinationServer; } set { destinationServer = value; } }
+        #endregion
+
+        public Repository(Server s, UserContext userContext)
+        {
+            destinationServer = s;
+            this.userContext = userContext;
+            Task.Factory.StartNew(() => ListeningDbQueue());   
+        }
+
+        #region Listeners
+        private void ListeningDbQueue()
+        {
+            while (true)
+            {
+                
+                if (DestinationServer.DbQueue.QueueA.Count > 0)
+                {
+                    String xml;
+                    xml = Pop(DestinationServer.DbQueue.QueueA);
+                    //send to method deserialize
+                    Packet packet = Deserialize(xml);
+                    User user = packet.User;
+
+
+                    Console.WriteLine($"{packet.Message}   -   \n{packet.TypeOfRequest.ToString()}   -   \n{packet.User}");
+
+
+                    if(packet.TypeOfRequest != RequestType.UPDATE)
+                    {
+                        Add(user);
+                    }
+                    else
+                    {
+                        Update(user);
+                    }
+                    //Console.WriteLine($"Recieved message: {recievedPacket}");
+                }
+                Thread.Sleep(1000);
+            }
+        }
+        #endregion
+
+        #region Operations on DB
+        public IEnumerable<User> GetAll()
+        {
+            IEnumerable<User> query = userContext.Set<User>();
+            return query;
+        }
+
+        public void Add(User element)
+        {
+            userContext.Set<User>().Add(element);
+            Save();
+        }
+
+        public void Update(User element)
+        {
+            userContext.Entry(element).State = EntityState.Modified;
+            Save();
+        }
+
+        public int Save()
+        {
+            return userContext.SaveChanges();
+        }
+        #endregion
+    }
+}
