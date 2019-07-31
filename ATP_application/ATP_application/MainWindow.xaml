@@ -1,0 +1,119 @@
+﻿<Window x:Class="ATP_application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATP_application"
+        mc:Ignorable="d"
+        Title="ATP lista" Height="702" Width="1024" Icon="atp_icon.png" Background="#FF121A2D"  Closing="CloseApp_Click" MinWidth="1024" MinHeight="702">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#FF3CA7E3" />
+            <Setter Property="Foreground" Value="#FF121A2D" />
+            <Setter Property="BorderBrush" Value="#FF121A2D" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="Margin" Value="5 3 7 3" />
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+
+
+        <Image HorizontalAlignment="Center" Height="344" Margin="0,0,0,0" VerticalAlignment="Top" Width="830" Source="atp_finals.jpg"/>
+
+        <DataGrid x:Name="dg_tabela" ItemsSource="{Binding Atp_list}" IsReadOnly="True" AutoGenerateColumns="False" HorizontalAlignment="Center" Height="250" Margin="93,342,93,0" VerticalAlignment="Top" Width="830" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <DataGrid.Columns>
+                <!--Image-->
+                <DataGridTemplateColumn  Header="Slika" Width="110">
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Imgpath_bind}" Height="50" Width="50"></Image>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    
+                </DataGridTemplateColumn>
+                <!--Country-->
+                <DataGridTextColumn Binding="{Binding Country}" Header="Država" Width="65">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"></Setter>
+                            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <!--Name-->
+                <DataGridTextColumn Binding="{Binding Name}" Header="Ime" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"></Setter>
+                            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <!--Surname-->
+                <DataGridTextColumn Binding="{Binding Surname}" Header="Prezime" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"></Setter>
+                            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <!--Date of birth-->
+                <DataGridTextColumn Binding="{Binding Display_date}" Header="Datum rođenja" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"></Setter>
+                            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <!--Play style-->
+                <!--
+                <DataGridTextColumn Binding="{Binding Playstyle}" Header="Play style" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"></Setter>
+                            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                -->
+                <!--ATP points-->
+                <DataGridTextColumn Binding="{Binding Points}" Header="ATP poeni" Width="65">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"></Setter>
+                            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+
+                <!--Komande-->
+
+                <DataGridTemplateColumn x:Name="dgcol" Header="Operacije" Width="*">
+                    
+                    <DataGridTemplateColumn.CellTemplate>
+                        
+                        <DataTemplate>
+                            <StackPanel x:Name="x" >
+                                <Button x:Name="details" Content="Pogledaj" Click="Details_Click" ></Button>
+                                <Button x:Name="change" Content="Izmeni" Click="Change_Click"></Button>
+                                <Button x:Name="delete" Content="Izbrisi" Click="Delete_Click"></Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="Add_player" Content="Dodaj tenisera" HorizontalAlignment="Right" Margin="0,0,93,27" VerticalAlignment="Bottom" Width="182" Height="34" Click="Add_player_in_list"/>
+        <Button x:Name="CloseApp" Content="Zatvori aplikaciju" HorizontalAlignment="Left" Margin="93,0,0,27" VerticalAlignment="Bottom" Width="182" Height="34" Click="CloseApp_Click_1"/>
+
+
+    </Grid>
+</Window>

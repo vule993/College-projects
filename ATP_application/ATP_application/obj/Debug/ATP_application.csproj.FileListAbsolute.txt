@@ -1,0 +1,203 @@
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\bin\Debug\ATP_application.exe.config
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\bin\Debug\ATP_application.exe
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\bin\Debug\ATP_application.pdb
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\ATP_application.csprojAssemblyReference.cache
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\Add_tennis_player.g.cs
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\MainWindow.g.cs
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\ViewWindow.g.cs
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\App.g.cs
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\ATP_application_MarkupCompile.cache
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\ATP_application_MarkupCompile.lref
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\Add_tennis_player.baml
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\MainWindow.baml
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\ViewWindow.baml
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\ATP_application.g.resources
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\ATP_application.Properties.Resources.resources
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\ATP_application.csproj.GenerateResource.cache
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\ATP_application.csproj.CoreCompileInputs.cache
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\ATP_application.exe
+C:\Users\vule9\Desktop\HCI\ATP_application\ATP_application\obj\Debug\ATP_application.pdb
+C:\Users\vule9\Desktop\ATP_application\ATP_application\bin\Debug\ATP_application.exe.config
+C:\Users\vule9\Desktop\ATP_application\ATP_application\bin\Debug\ATP_application.exe
+C:\Users\vule9\Desktop\ATP_application\ATP_application\bin\Debug\ATP_application.pdb
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\ATP_application.csprojAssemblyReference.cache
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\Add_tennis_player.g.cs
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\MainWindow.g.cs
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\ViewWindow.g.cs
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\App.g.cs
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\ATP_application_MarkupCompile.cache
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\ATP_application_MarkupCompile.lref
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\Add_tennis_player.baml
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\MainWindow.baml
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\ViewWindow.baml
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\ATP_application.g.resources
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\ATP_application.Properties.Resources.resources
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\ATP_application.csproj.GenerateResource.cache
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\ATP_application.csproj.CoreCompileInputs.cache
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\ATP_application.exe
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\ATP_application.pdb
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\bin\Debug\ATP_application.exe.config
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\bin\Debug\ATP_application.exe
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\bin\Debug\ATP_application.pdb
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\ATP_application.csprojAssemblyReference.cache
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\Add_tennis_player.g.cs
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\MainWindow.g.cs
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\ViewWindow.g.cs
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\App.g.cs
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\ATP_application_MarkupCompile.cache
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\ATP_application_MarkupCompile.lref
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\Add_tennis_player.baml
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\MainWindow.baml
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\ViewWindow.baml
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\ATP_application.g.resources
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\ATP_application.Properties.Resources.resources
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\ATP_application.csproj.GenerateResource.cache
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\ATP_application.csproj.CoreCompileInputs.cache
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\ATP_application.exe
+C:\Users\vule9\Documents\FTN\III godina\ATP_application\ATP_application\obj\Debug\ATP_application.pdb
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\bin\Debug\ATP_application.exe.config
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\bin\Debug\ATP_application.exe
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\bin\Debug\ATP_application.pdb
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\ATP_application.csprojAssemblyReference.cache
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\Add_tennis_player.g.cs
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\MainWindow.g.cs
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\ViewWindow.g.cs
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\App.g.cs
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\ATP_application_MarkupCompile.cache
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\ATP_application_MarkupCompile.lref
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\Add_tennis_player.baml
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\MainWindow.baml
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\ViewWindow.baml
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\ATP_application.g.resources
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\ATP_application.Properties.Resources.resources
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\ATP_application.csproj.GenerateResource.cache
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\ATP_application.csproj.CoreCompileInputs.cache
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\ATP_application.exe
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application\ATP_application\obj\Debug\ATP_application.pdb
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\Warning.g.cs
+C:\Users\vule9\Desktop\ATP_application\ATP_application\obj\Debug\Warning.baml
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\bin\Debug\ATP_application.exe.config
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\bin\Debug\ATP_application.exe
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\bin\Debug\ATP_application.pdb
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\ATP_application.csprojAssemblyReference.cache
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\Add_tennis_player.g.cs
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\MainWindow.g.cs
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\ViewWindow.g.cs
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\Warning.g.cs
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\App.g.cs
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\ATP_application_MarkupCompile.cache
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\ATP_application_MarkupCompile.lref
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\Add_tennis_player.baml
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\MainWindow.baml
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\ViewWindow.baml
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\Warning.baml
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\ATP_application.g.resources
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\ATP_application.Properties.Resources.resources
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\ATP_application.csproj.GenerateResource.cache
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\ATP_application.csproj.CoreCompileInputs.cache
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\ATP_application.exe
+C:\Users\vule9\Desktop\ATP_application [FINAL]\ATP_application\obj\Debug\ATP_application.pdb
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\bin\Debug\ATP_application.exe.config
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\bin\Debug\ATP_application.exe
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\bin\Debug\ATP_application.pdb
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\Add_tennis_player.g.cs
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\MainWindow.g.cs
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\ViewWindow.g.cs
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\Warning.g.cs
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\App.g.cs
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\ATP_application_MarkupCompile.cache
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\ATP_application_MarkupCompile.lref
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\Add_tennis_player.baml
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\MainWindow.baml
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\ViewWindow.baml
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\Warning.baml
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\ATP_application.g.resources
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\ATP_application.Properties.Resources.resources
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\ATP_application.csproj.GenerateResource.cache
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\ATP_application.csproj.CoreCompileInputs.cache
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\ATP_application.exe
+C:\Users\vule9\Desktop\igre\ATP_application_final\ATP_application\obj\Debug\ATP_application.pdb
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\bin\Debug\ATP_application.exe.config
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\bin\Debug\ATP_application.exe
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\bin\Debug\ATP_application.pdb
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\ATP_application.csprojAssemblyReference.cache
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\Add_tennis_player.g.cs
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\MainWindow.g.cs
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\ViewWindow.g.cs
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\Warning.g.cs
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\App.g.cs
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\ATP_application_MarkupCompile.cache
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\ATP_application_MarkupCompile.lref
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\Add_tennis_player.baml
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\MainWindow.baml
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\ViewWindow.baml
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\Warning.baml
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\ATP_application.g.resources
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\ATP_application.Properties.Resources.resources
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\ATP_application.csproj.GenerateResource.cache
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\ATP_application.csproj.CoreCompileInputs.cache
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\ATP_application.exe
+C:\Users\vule9\Documents\FTN\III godina\V Semestar\ATP_application_final\ATP_application\obj\Debug\ATP_application.pdb
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\bin\Debug\ATP_application.exe.config
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\bin\Debug\ATP_application.exe
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\bin\Debug\ATP_application.pdb
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\ATP_application.csprojAssemblyReference.cache
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\Add_tennis_player.g.cs
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\MainWindow.g.cs
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\ViewWindow.g.cs
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\Warning.g.cs
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\App.g.cs
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\ATP_application_MarkupCompile.cache
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\ATP_application_MarkupCompile.lref
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\Add_tennis_player.baml
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\MainWindow.baml
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\ViewWindow.baml
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\Warning.baml
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\ATP_application.g.resources
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\ATP_application.Properties.Resources.resources
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\ATP_application.csproj.GenerateResource.cache
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\ATP_application.csproj.CoreCompileInputs.cache
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\ATP_application.exe
+C:\Users\vule9\Desktop\HCI\Vezbe\ATP_application_final\ATP_application\obj\Debug\ATP_application.pdb
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\bin\Debug\ATP_application.exe.config
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\bin\Debug\ATP_application.exe
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\bin\Debug\ATP_application.pdb
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\ATP_application.csprojAssemblyReference.cache
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\Add_tennis_player.g.cs
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\MainWindow.g.cs
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\ViewWindow.g.cs
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\Warning.g.cs
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\App.g.cs
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\ATP_application_MarkupCompile.cache
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\ATP_application_MarkupCompile.lref
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\Add_tennis_player.baml
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\MainWindow.baml
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\ViewWindow.baml
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\Warning.baml
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\ATP_application.g.resources
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\ATP_application.Properties.Resources.resources
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\ATP_application.csproj.GenerateResource.cache
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\ATP_application.csproj.CoreCompileInputs.cache
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\ATP_application.exe
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application_final\ATP_application\obj\Debug\ATP_application.pdb
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\bin\Debug\ATP_application.exe.config
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\bin\Debug\ATP_application.exe
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\bin\Debug\ATP_application.pdb
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\ATP_application.csprojAssemblyReference.cache
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\Add_tennis_player.g.cs
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\MainWindow.g.cs
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\ViewWindow.g.cs
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\Warning.g.cs
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\App.g.cs
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\ATP_application_MarkupCompile.cache
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\ATP_application_MarkupCompile.lref
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\Add_tennis_player.baml
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\MainWindow.baml
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\ViewWindow.baml
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\Warning.baml
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\ATP_application.g.resources
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\ATP_application.Properties.Resources.resources
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\ATP_application.csproj.GenerateResource.cache
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\ATP_application.csproj.CoreCompileInputs.cache
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\ATP_application.exe
+D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\obj\Debug\ATP_application.pdb

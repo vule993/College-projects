@@ -1,0 +1,62 @@
+﻿<Window x:Class="ATP_application.Add_tennis_player"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATP_application"
+        mc:Ignorable="d"
+        Title="Teniser" Height="550" Width="599" Background="#FF121A2D" Icon="atp_icon.png" MinWidth="580" MinHeight="550">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#FF3CA7E3" />
+            <Setter Property="Foreground" Value="#FF121A2D" />
+            <Setter Property="BorderBrush" Value="#FF121A2D" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="Margin" Value="5 3 7 3" />
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Label Content="Podaci o teniseru" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,18,245,0" VerticalAlignment="Top" Width="336" Foreground="White" Height="68" FontSize="36" FontWeight="SemiBold"/>
+
+        <Label Content="Ime :" HorizontalAlignment="Left" Margin="22,98,0,0" VerticalAlignment="Top" Width="106" Foreground="White"/>
+        <TextBox x:Name="tb_name" HorizontalAlignment="Left" Height="23" Margin="22,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+        <Label Content="Prezime :" HorizontalAlignment="Left" Margin="22,152,0,0" VerticalAlignment="Top" Width="106" Foreground="White"/>
+        <TextBox x:Name="tb_surname" HorizontalAlignment="Left" Height="22" Margin="22,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+        <Label Content="Drzava :" HorizontalAlignment="Left" Margin="22,205,0,0" VerticalAlignment="Top" Width="106" Foreground="White"/>
+        <TextBox x:Name="tb_country" HorizontalAlignment="Left" Height="23" Margin="22,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+        <Label Content="Datum rodjenja :" HorizontalAlignment="Left" Margin="22,259,0,0" VerticalAlignment="Top" Width="106" Foreground="White"/>
+        <ComboBox x:Name="cb_day" HorizontalAlignment="Left" Margin="23,290,0,0" VerticalAlignment="Top" Width="78"/>
+        <ComboBox x:Name="cb_month" HorizontalAlignment="Left" Margin="116,290,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="1.103,0.455"/>
+        <ComboBox x:Name="cb_year" HorizontalAlignment="Left" Margin="212,290,0,0" VerticalAlignment="Top" Width="78"/>
+
+        <Label Content="Dominantna ruka :" HorizontalAlignment="Left" Margin="22,317,0,0" VerticalAlignment="Top" Width="106" Foreground="White"/>
+        <ComboBox x:Name="cb_playstyle" HorizontalAlignment="Left" Margin="22,343,0,0" VerticalAlignment="Top" Width="128"/>
+        <Label Content="ATP poeni :" HorizontalAlignment="Left" Margin="24,370,0,0" VerticalAlignment="Top" Width="71" Foreground="White"/>
+        <TextBox x:Name="tb_points" HorizontalAlignment="Left" Height="23" Margin="22,396,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="Bu_add" Content="Dodaj tenisera" HorizontalAlignment="Center" Margin="373,0,36,29" VerticalAlignment="Bottom" Width="182" Height="34" Click="Add_player_in_list"/>
+
+        <Image x:Name="pb_img" HorizontalAlignment="Left" Height="125" Margin="383,10,0,0" VerticalAlignment="Top" Width="125" />
+
+        <Button x:Name="Browse" Content="Dodaj sliku" HorizontalAlignment="Left" Margin="383,179,0,0" VerticalAlignment="Top" Width="125" Height="32" Click="Browse_Click"/>
+        <TextBox x:Name="tb_imgpath" HorizontalAlignment="Left" Height="23" Margin="383,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbl_about" HorizontalAlignment="Left" Height="160" Margin="330,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="225"/>
+        <Label Content="O teniseru :" HorizontalAlignment="Left" Margin="330,228,0,0" VerticalAlignment="Top" Width="106" Foreground="White"/>
+        <Label x:Name="w_name" Content="" HorizontalAlignment="Left" Margin="128,98,0,0" VerticalAlignment="Top" Width="162" Foreground="#FFB22B2B" FontSize="11"/>
+        <Label x:Name="w_surname" Content="" HorizontalAlignment="Left" Margin="128,147,0,0" VerticalAlignment="Top" Width="162" Foreground="#FFB22B2B" FontSize="11"/>
+        <Label x:Name="w_country" Content="" HorizontalAlignment="Left" Margin="128,200,0,0" VerticalAlignment="Top" Width="162" Foreground="#FFB22B2B" FontSize="11"/>
+        <Label x:Name="w_date" Content="" HorizontalAlignment="Left" Margin="128,259,0,0" VerticalAlignment="Top" Width="162" Foreground="#FFB22B2B" FontSize="11"/>
+        <Label x:Name="w_points" Content="" HorizontalAlignment="Left" Margin="95,371,0,0" VerticalAlignment="Top" Width="195" Foreground="#FFB22B2B" FontSize="11"/>
+        <Label x:Name="w_playstyle" Content="" HorizontalAlignment="Left" Margin="128,317,0,0" VerticalAlignment="Top" Width="162" Foreground="#FFB22B2B" FontSize="11"/>
+        <Label x:Name="w_about" Content="" HorizontalAlignment="Left" Margin="405,228,0,0" VerticalAlignment="Top" Width="176" Foreground="#FFB22B2B" FontSize="11"/>
+        <Label x:Name="w_img" Content="" HorizontalAlignment="Left" Margin="365,140,0,0" VerticalAlignment="Top" Width="157" Foreground="#FFB22B2B" FontSize="11"/>
+        <Button x:Name="Bu_exit" Content="Zatvori" HorizontalAlignment="Center" Margin="24,0,385,29" VerticalAlignment="Bottom" Width="182" Height="34" Click="Bu_exit_Click"/>
+
+
+
+    </Grid>
+</Window>

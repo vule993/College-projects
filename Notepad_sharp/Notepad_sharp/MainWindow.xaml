@@ -1,0 +1,240 @@
+﻿<Window x:Class="Notepad_sharp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notepad_sharp"
+        mc:Ignorable="d"
+
+        Title="Notepad sharp" MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStyle="None" AllowsTransparency="True" Background="Transparent" Height="720" Width="1230">
+    <!--postavljam prozor da bude transparentan-->
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#FF3CA7E3" />
+            <Setter Property="Foreground" Value="#FF121A2D" />
+            <Setter Property="BorderBrush" Value="#FF121A2D" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="Margin" Value="5 3 7 3" />
+        </Style>
+        
+    </Window.Resources>
+
+    <Canvas>
+        <Path Stroke="#FF3CA7E3" StrokeThickness="3" Name="Sketch" Stretch="Fill" Width="950" Height="630" Canvas.Left="135" Canvas.Top="50">
+            <Path.Fill>
+                <SolidColorBrush Color="White"></SolidColorBrush>
+            </Path.Fill>
+
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="50 45">
+
+                        <LineSegment Point="100 50"></LineSegment>
+                        <LineSegment Point="105 0"></LineSegment>
+                        <LineSegment Point="135 0"></LineSegment>
+                        <LineSegment Point="125 50"></LineSegment>
+
+
+                        <LineSegment Point="375 50"></LineSegment>
+                        <LineSegment Point="375 0"></LineSegment>
+                        <LineSegment Point="415 0"></LineSegment>
+                        <LineSegment Point="400 50"></LineSegment>
+                        <LineSegment Point="440 45"></LineSegment>
+                        <LineSegment Point="435 80"></LineSegment>
+                        <LineSegment Point="395 75"></LineSegment>
+
+
+                        <LineSegment Point="360 325"></LineSegment>
+                        <LineSegment Point="410 315"></LineSegment>
+                        <LineSegment Point="405 360"></LineSegment>
+                        <LineSegment Point="355 350"></LineSegment>
+                        <LineSegment Point="360 400"></LineSegment>
+                        <LineSegment Point="320 400"></LineSegment>
+                        <LineSegment Point="330 350"></LineSegment>
+
+
+                        <LineSegment Point="85 350"></LineSegment>
+                        <LineSegment Point="90 400"></LineSegment>
+                        <LineSegment Point="55 400"></LineSegment>
+                        <LineSegment Point="65 350"></LineSegment>
+                        <LineSegment Point="10 355"></LineSegment>
+                        <LineSegment Point="15 315"></LineSegment>
+                        <LineSegment Point="70 325"></LineSegment>
+
+
+                        <LineSegment Point="95 75"></LineSegment>
+                        <LineSegment Point="45 75"></LineSegment>
+                        <LineSegment Point="50 48"></LineSegment>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+
+        <DockPanel Height="413" Width="560" Canvas.Left="335" Canvas.Top="142">
+
+        </DockPanel>
+        <Button Name="Close_app" Content="Close app" Canvas.Left="790" Canvas.Top="565" Width="100" Height="25" Click="Close_app_Click" Margin="0" Background="#FF3CA7E3"/>
+        <Button Name="Minimize" Content="Minimize" Canvas.Left="675" Canvas.Top="565" Width="100" Height="25" Click="Minimize_Click" Margin="0" Background="#FF3CA7E3"/>
+        <ToolBar Width="625" Canvas.Left="340" Canvas.Top="147" Height="40">
+            <Button x:Name="BtnNew" Content="" Margin="0,4" Width="32" Height="32" Click="BtnNew_Checked">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+                                        <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#80DADADA"/>
+                                        </Trigger>
+                                        <Trigger Property="IsKeyboardFocused" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#80DADADA"/>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#90006CD9"/>
+                                            
+                                        </Trigger>
+                                        
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Button.Background>
+                    <ImageBrush ImageSource="add.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="BtnOpen" Content="" Margin="0,4" Width="32" Height="32" Click="BtnOpen_Checked">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+                                        <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#80DADADA"/>
+                                        </Trigger>
+                                        <Trigger Property="IsKeyboardFocused" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#80DADADA"/>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#90006CD9"/>
+
+                                        </Trigger>
+
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Button.Background>
+                    <ImageBrush ImageSource="open.png"/>
+                </Button.Background>
+
+            </Button>
+            
+            <!--OVDE GLEDAJ-->
+            <Button x:Name="BtnSave" Content="" Margin="0,4" Width="32" Height="32" Click="BtnSave_Checked">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+                                        <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#80DADADA"/>
+                                        </Trigger>
+                                        <Trigger Property="IsKeyboardFocused" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#80DADADA"/>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#90006CD9"/>
+
+                                        </Trigger>
+
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Button.Background>
+                    <ImageBrush ImageSource="save.png"/>
+                    
+                </Button.Background>
+            
+            </Button>
+            <Separator></Separator>
+
+            <ToggleButton Command="EditingCommands.ToggleBold" x:Name="BtnBold" Content="B" Margin="0,4" Width="32" Height="32"/>
+
+            <ToggleButton Command="EditingCommands.ToggleItalic" x:Name="BtnItalic" Content="I" Margin="0,4" Width="32" Height="32"/>
+
+            <ToggleButton Command="EditingCommands.ToggleUnderline" x:Name="BtnUnderline" Content="U" Margin="0,4" Width="32" Height="32"/>
+            <Separator></Separator>
+
+            <ToggleButton  x:Name="BtnFontColor" Content="A" Margin="0,4" Width="32" Click="BtnFontColor_Click" Height="32"/>
+
+
+            <ComboBox x:Name="CmbFontFamily" FontFamily="CmbFontFamily" Width="150" SelectionChanged="CmbFontFamily_SelectionChanged"></ComboBox>
+
+            <ComboBox x:Name="CmbFontSize" FontFamily="CmbFontSize" Width="50" SelectionChanged="CmbFontSize_SelectionChanged"></ComboBox>
+            <Separator></Separator>
+            <Button x:Name="FindReplace"  Width="32" Height="32" Click="FindReplace_Checked" >
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+                                        <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#80DADADA"/>
+                                        </Trigger>
+                                        <Trigger Property="IsKeyboardFocused" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#80DADADA"/>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter Property="BorderBrush" TargetName="Bd" Value="#90006CD9"/>
+
+                                        </Trigger>
+
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Button.Background>
+                    <ImageBrush ImageSource="find.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="InsertDate" Content="Insert date" Height="35" VerticalAlignment="Top" Width="75" Click="InsertDate_Click"/>
+        </ToolBar>
+
+
+
+        <RichTextBox x:Name="Editor" BorderThickness="0" Height="358" Canvas.Left="340" Canvas.Top="192" Width="550" SelectionChanged="Edditor_SelectionChanged" TextChanged="Editor_TextChanged" KeyDown="Editor_KeyDown">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label x:Name="L_count" Content="Broj reci: 0" Canvas.Left="277" Canvas.Top="565" Height="25" Width="238"/>
+    </Canvas>
+</Window>

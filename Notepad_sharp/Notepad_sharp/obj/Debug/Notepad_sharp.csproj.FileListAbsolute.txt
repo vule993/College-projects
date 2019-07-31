@@ -1,0 +1,19 @@
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\bin\Debug\Notepad_sharp.exe
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\bin\Debug\Notepad_sharp.exe.config
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Find and Replace.g.cs
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\MainWindow.g.cs
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Prompt.g.cs
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\App.g.cs
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Notepad_sharp_MarkupCompile.cache
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Notepad_sharp_MarkupCompile.lref
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Find and Replace.baml
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\MainWindow.baml
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Prompt.baml
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Notepad_sharp.g.resources
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Notepad_sharp.Properties.Resources.resources
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Notepad_sharp.csproj.GenerateResource.cache
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Notepad_sharp.csproj.CoreCompileInputs.cache
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Notepad_sharp.exe
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Notepad_sharp.pdb
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\bin\Debug\Notepad_sharp.pdb
+C:\Users\vule9\Desktop\Notepad_sharp\Notepad_sharp\obj\Debug\Notepad_sharp.csprojAssemblyReference.cache

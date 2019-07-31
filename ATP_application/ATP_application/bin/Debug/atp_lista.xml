@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfTeniser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Teniser>
+    <Name>Novak123</Name>
+    <Surname>Djokovic</Surname>
+    <Birthday>0001-01-01T00:00:00</Birthday>
+    <Country>SRB</Country>
+    <Playstyle>Desna</Playstyle>
+    <Points>10525</Points>
+    <Imgpath>img\-114226981.jpg</Imgpath>
+    <Imgpath_bind>D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\img\-114226981.jpg</Imgpath_bind>
+    <Display_date>22-May-1986</Display_date>
+    <About>No1e najjaci na svetu!</About>
+  </Teniser>
+  <Teniser>
+    <Name>Roger</Name>
+    <Surname>Federer</Surname>
+    <Birthday>0001-01-01T00:00:00</Birthday>
+    <Country>SUI</Country>
+    <Playstyle>Desna</Playstyle>
+    <Points>8505</Points>
+    <Imgpath>img\-895761707.jpg</Imgpath>
+    <Imgpath_bind>D:\FTN\III godina\V Semestar\HCI\Vezbe\Projekti\ATP_application\ATP_application\img\-895761707.jpg</Imgpath_bind>
+    <Display_date>8-Aug-1981</Display_date>
+    <About>Feeeeder klasican.</About>
+  </Teniser>
+</ArrayOfTeniser>

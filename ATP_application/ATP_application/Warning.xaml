@@ -1,0 +1,24 @@
+﻿<Window x:Name="warning" x:Class="ATP_application.Warning"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATP_application"
+        mc:Ignorable="d"
+        Title="Upozorenje!" Height="182" Width="339" Background="#FF121A2D" Foreground="White" Icon="atp_icon.png">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#FF3CA7E3" />
+            <Setter Property="Foreground" Value="#FF121A2D" />
+            <Setter Property="BorderBrush" Value="#FF121A2D" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="Margin" Value="5 3 7 3" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label Content="Promene nece biti sačuvane! Izađi?" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="210" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="povratak" Content="Vrati se" HorizontalAlignment="Center" Margin="50,80,191,36" VerticalAlignment="Center" Width="90" Click="povratak_Click" Height="35"/>
+        <Button x:Name="izadji" Content="Izađi" HorizontalAlignment="Center" Margin="190,80,51,36" VerticalAlignment="Center" Width="90" Click="izadji_Click" Height="35"/>
+
+    </Grid>
+</Window>

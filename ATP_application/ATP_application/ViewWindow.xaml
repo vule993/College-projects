@@ -1,0 +1,33 @@
+﻿<Window x:Class="ATP_application.ViewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATP_application"
+        mc:Ignorable="d"
+        Title="Pregled" Height="485" Width="570" Background="#FF121A2D" MinWidth="570" MinHeight="485" Icon="atp_icon.png">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#FF3CA7E3" />
+            <Setter Property="Foreground" Value="#FF121A2D" />
+            <Setter Property="BorderBrush" Value="#FF121A2D" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="Margin" Value="5 3 7 3" />
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Label x:Name="title" Content="Podaci o teniseru :" HorizontalAlignment="Center" Margin="225,24,28,0" VerticalAlignment="Top" Width="308" Foreground="#FF3CA7E3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}" Height="60" FontSize="36" FontFamily="Roboto Condensed"/>
+        <Image x:Name="img" HorizontalAlignment="Left" Height="170" Margin="23,24,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label x:Name="lb_birth" Content="20-Sep-1993" HorizontalAlignment="Center" Margin="23,216,370,0" VerticalAlignment="Top" Width="168" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}" FontSize="20" Height="40"/>
+        <Label x:Name="lb_points" Content="125250" HorizontalAlignment="Center" Margin="23,335,371,0" VerticalAlignment="Top" Width="167" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}" FontSize="20" Height="40"/>
+        <Label x:Name="lb_type" Content="Levoruk" HorizontalAlignment="Center" Margin="24,275,370,0" VerticalAlignment="Top" Width="167" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}" FontSize="20" Height="40"/>
+        <Label x:Name="lb_name" Content="Vukasin Radic SRB" HorizontalAlignment="Center" Margin="225,105,28,0" VerticalAlignment="Top" Width="308" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}" Height="45" FontSize="22"/>
+        <TextBlock x:Name="tbl_about" HorizontalAlignment="Left" Margin="225,216,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="131" Width="308" Foreground="White" FontSize="14"/>
+        <Button x:Name="ViewClose" Content="Zatvori" HorizontalAlignment="Left" Margin="24,395,0,0" VerticalAlignment="Top" Width="156" Height="34" Click="ViewClose_Click"/>
+        <Button x:Name="Change" Content="Izmeni" HorizontalAlignment="Left" Margin="377,395,0,0" VerticalAlignment="Top" Width="156" Height="34" Click="Change_Click"/>
+        <Label x:Name="lb_surname" Content="Vukasin Radic SRB" HorizontalAlignment="Center" Margin="226,162,28,0" VerticalAlignment="Top" Width="308" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}" Height="45" FontSize="22"/>
+
+    </Grid>
+</Window>

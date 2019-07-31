@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="PZ3_NetworkService.Views.DataChartView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PZ3_NetworkService.Views"
+             xmlns:vml="clr-namespace:PZ3_NetworkService.VML"
+             xmlns:viewModel="clr-namespace:PZ3_NetworkService.ViewModel"
+             vml:ViewModelLocator.AutoHookedUpViewModel="True"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1024">
+    <Grid Width="1024" Height="600">
+        
+        <Grid.Resources>
+            <viewModel:DataChartViewModel x:Key="DataChartViewModel"/>
+        </Grid.Resources>
+        
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label  FontSize="15"  Content="Select element:" Margin="0,8,0,0"></Label>
+                <ComboBox Height="40" Width="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ItemsSource="{Binding ChooseElement}" SelectedItem="{Binding SelectedId, Mode=TwoWay}"></ComboBox>
+                <Button Content="Show chart" Command="{Binding ShowGraph}"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="1024" Height="570">
+                <StackPanel Orientation="Horizontal" Width="1024" Height="490">
+                    <Label  FontSize="15" FontWeight="Bold" Content="Values" VerticalAlignment="Center">
+                        <Label.LayoutTransform>
+                            <RotateTransform Angle="-90"></RotateTransform>
+                        </Label.LayoutTransform>
+                    </Label>
+                    
+                    <ItemsControl ItemsSource="{Binding RectItems}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <Canvas/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                
+                                <StackPanel Orientation="Vertical" Width="{Binding Width}"  Height="{Binding Height}" Background="{Binding Col}">
+                                    <StackPanel.RenderTransform>
+                                        <TranslateTransform X="{Binding X}" Y="{Binding Y}"/>
+                                    </StackPanel.RenderTransform>
+
+                                    <Label  FontSize="15" FontWeight="DemiBold" Foreground="#FF121A2D" Height="{Binding Width}" Width="{Binding Height}" Content="{Binding Data}" HorizontalContentAlignment="Left" VerticalContentAlignment="Center">
+                                        <Label.LayoutTransform>
+                                            <RotateTransform Angle="-90"></RotateTransform>
+                                        </Label.LayoutTransform>
+                                    </Label>
+                                    
+                                
+                                   
+                                    
+                                    
+                                </StackPanel>
+                                
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+                <Label  FontSize="15" FontWeight="Bold" Content="Time" HorizontalAlignment="Center" VerticalAlignment="Bottom"></Label>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

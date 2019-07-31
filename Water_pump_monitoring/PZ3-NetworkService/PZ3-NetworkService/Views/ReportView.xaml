@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="PZ3_NetworkService.Views.ReportView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PZ3_NetworkService.Views"
+             xmlns:vml="clr-namespace:PZ3_NetworkService.VML"
+             vml:ViewModelLocator.AutoHookedUpViewModel="True"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1024">
+    <Grid Width="1024">
+        <StackPanel Orientation="Vertical">
+            <Button Command="{Binding ShowData}" Content="Show daily report" HorizontalAlignment="Left" Margin="32,40,0,10" VerticalAlignment="Top"/>
+            
+            <TextBox ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" Background="#E9EBEE" Text="{Binding DailyReport, Mode=TwoWay}" FontSize="18" Width="960" Height="490"></TextBox>
+            
+            
+        </StackPanel>
+    </Grid>
+</UserControl>
